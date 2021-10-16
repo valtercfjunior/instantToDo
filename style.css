@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+
+
+header{
+    color: #14D87A;
+    margin: auto;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50pt;
+}
+
+body{
+    background-color: white;    
+    margin: 0;
+    
+}
+main{
+    background-color: #F0F0F0;
+    max-width: 900px;
+    min-height: 600px;
+    height: min-content;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding-bottom: 10px;
+}
+#inputs > input{
+    background-color: #72ebb0c4;
+    border-radius: 20px 20px 5px 5px;
+    border: none;
+    margin: auto;
+    width: 100%;
+    padding: 0;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: white;
+    text-align: center;
+    
+}
+
+input:focus{
+    outline: none;
+    background-color: #14d8a7 ;
+    
+
+}
+
+#toDos{
+    margin: 20px 10px 10px 10px;
+}
+
+.tarefa_div{
+    background-color: rgba(128, 128, 128, 0.11);
+    width: 78%;
+    height: 30px;
+    display: inline-block;
+    border-radius: 5px 20px 20px 5px;
+    border: none;    
+    text-align: center;
+    padding: 10px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(47, 172, 255);
+    font-size: 15pt;
+}
+input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: -7px;
+    left: 60px;
+
+}
+input[type="checkbox"]:checked + div{ 
+    
+    background-color: rgba(136, 255, 0, 0.452);
+    color: grey;
+    transition-duration: 1s;
+
+}
+input[type="checkbox"]:not(checked) + div{ 
+    
+    transition-duration: 1s;
+}
+
+
+input[type="button"]{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: none;
+    background-color: #cccfce;
+    color: azure;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    bottom: 4px;
+    
+         
+}
+
+input[type="button"]:hover{
+    background-color: #ff048e9d;
+    transition: 1s;
+}
+
+.tarefa_div:hover{
+    background-color: #14d8c85e;
+    transition: 1s;
+}
+
+
+footer{
+    color: white;
+    background-color: #14D87A ;
+    height: 150px;
+    width: 100%;   
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15pt;
+    position: relative;
+    bottom: -200px;
+}
+
+img{
+    width: 50px;
+    margin: 0 10px;
+}
