@@ -52,7 +52,7 @@ input:focus{
 
 .tarefa_div{
     background-color: rgba(128, 128, 128, 0.11);
-    width: 78%;
+    width: 70%;
     height: 30px;
     display: inline-block;
     border-radius: 5px 20px 20px 5px;
