@@ -1,9 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 
+:root{
+    --header-color: #59e9fcce ;
+    --body-bg: white;
+    --body-color: ;
+    --main-color: ;
+    --main-bg: #F0F0F0;
+    --input-bg: #b2f177e5;
+    --input-color: rgba(0, 0, 0, 0.507) ;
+    --task-bg: rgba(128, 128, 128, 0.11);
+    --task-color: #434647;
+    --footer-bg: #14D87A;
+    --footer-color: white;
+    --inputs-bg2:#14d8a7;
+    --task-bg2: rgba(136, 255, 0, 0.452);
+    --task-color2: rgb(109, 109, 109);
+}
+
+.dark-mode:root{
+    --header-color: #52ff6f ;
+    --body-bg: rgb(37, 37, 37);
+    --body-color: ;
+    --main-color: ;
+    --main-bg: #646262;
+    --input-bg: #fef7ffbd;
+    --input-color: white ;
+    --task-bg: rgba(175, 175, 175, 0.89);
+    --task-color: #353535;
+    --footer-bg: #14D87A;
+    --footer-color: white;
+    --inputs-bg2:#9bffe6;
+    --task-bg2: rgb(139, 241, 126);
+    --task-color2: rgb(65, 65, 65);
+}
+
+
+
+
+
+#checkDarkMode{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    bottom: 20px;
+    left: 65px;
+    
+}
+
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: rgb(73, 73, 73);
+    text-align: center;
+
+}
 
 header{
-    color: #14D87A;
+    color: var(--header-color);
     margin: auto;
     text-align: center;
     font-family: 'Amatic SC', cursive;
@@ -11,12 +65,12 @@ header{
 }
 
 body{
-    background-color: white;    
+    background-color: var(--body-bg);    
     margin: 0;
     
 }
 main{
-    background-color: #F0F0F0;
+    background-color: var(--main-bg);
     max-width: 900px;
     min-height: 600px;
     height: min-content;
@@ -25,7 +79,7 @@ main{
     padding-bottom: 10px;
 }
 #inputs > input{
-    background-color: #72ebb0c4;
+    background-color: var(--input-bg);
     border-radius: 20px 20px 5px 5px;
     border: none;
     margin: auto;
@@ -34,14 +88,14 @@ main{
     height: 60px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
-    color: white;
+    color: var(--input-color);
     text-align: center;
     
 }
 
 input:focus{
     outline: none;
-    background-color: #14d8a7 ;
+    background-color: var(--inputs-bg2) ;
     
 
 }
@@ -51,7 +105,7 @@ input:focus{
 }
 
 .tarefa_div{
-    background-color: rgba(128, 128, 128, 0.11);
+    background-color: var(--task-bg) ;
     width: 85%;
     height: 30px;
     display: inline-block;
@@ -60,7 +114,7 @@ input:focus{
     text-align: center;
     padding: 10px 10px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(47, 172, 255);
+    color: var(--task-color);
     font-size: 15pt;
 }
 input[type="checkbox"]{
@@ -73,8 +127,8 @@ input[type="checkbox"]{
 }
 input[type="checkbox"]:checked + div{ 
     
-    background-color: rgba(136, 255, 0, 0.452);
-    color: grey;
+    background-color: var(--task-bg2);
+    color: var(--task-color2);
     transition-duration: 1s;
 
 }
@@ -89,7 +143,7 @@ input[type="button"]{
     height: 35px;
     border-radius: 100%;
     border: none;
-    background-color: #cccfce;
+    background-color: var(--task-bg);
     color: azure;
     cursor: pointer;
     margin: 0;
@@ -105,7 +159,7 @@ input[type="button"]:hover{
 }
 
 .tarefa_div:hover{
-    background-color: #14d8c85e;
+    background-color: #a6f7aae5;
     transition: 1s;
 }
 

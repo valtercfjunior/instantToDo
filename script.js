@@ -21,6 +21,18 @@ const abastecerBanco = (event) => {
     }
 }
 
+
+
+
+const $html = document.querySelector('html')
+const $checkbox = document.getElementById('checkDarkMode')
+
+
+function changeToDarkMode(){
+$html.classList.toggle('dark-mode')
+}
+ 
+
 function criarTarefa(tarefa, status, indice){
 //adiciona no HTML a nova tarega
     const novaDiv = document.createElement('div')
