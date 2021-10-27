@@ -17,7 +17,6 @@
     --task-bg2: rgba(136, 255, 0, 0.452);
     --task-color2: rgb(109, 109, 109);
 }
-
 .dark-mode:root{
     --header-color: #52ff6f ;
     --body-bg: rgb(37, 37, 37);
@@ -35,10 +34,6 @@
     --task-color2: rgb(65, 65, 65);
 }
 
-
-
-
-
 #checkDarkMode{
     position: relative;
     width: 20px;
@@ -49,7 +44,7 @@
 }
 
 span{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 15pt;
     color: rgb(73, 73, 73);
     text-align: center;
@@ -67,6 +62,7 @@ header{
 body{
     background-color: var(--body-bg);    
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 main{
@@ -86,7 +82,7 @@ main{
     width: 100%;
     padding: 0;
     height: 60px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 15pt;
     color: var(--input-color);
     text-align: center;
@@ -96,8 +92,6 @@ main{
 input:focus{
     outline: none;
     background-color: var(--inputs-bg2) ;
-    
-
 }
 
 #toDos{
@@ -113,7 +107,7 @@ input:focus{
     border: none;    
     text-align: center;
     padding: 10px 10px 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     color: var(--task-color);
     font-size: 15pt;
 }
@@ -137,7 +131,6 @@ input[type="checkbox"]:not(checked) + div{
     transition-duration: 1s;
 }
 
-
 input[type="button"]{
     width: 35px;
     height: 35px;
@@ -148,8 +141,7 @@ input[type="button"]{
     cursor: pointer;
     margin: 0;
     position: relative;
-    bottom: 4px;
-    
+    bottom: 4px; 
          
 }
 
@@ -163,13 +155,12 @@ input[type="button"]:hover{
     transition: 1s;
 }
 
-
 footer{
     color: white;
     background-color: #14D87A ;
     height: 150px;
     width: 100%;   
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     text-align: center;
     padding-top: 10px;
     font-size: 15pt;

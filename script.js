@@ -21,9 +21,6 @@ const abastecerBanco = (event) => {
     }
 }
 
-
-
-
 const $html = document.querySelector('html')
 const $checkbox = document.getElementById('checkDarkMode')
 
@@ -34,7 +31,7 @@ $html.classList.toggle('dark-mode')
  
 
 function criarTarefa(tarefa, status, indice){
-//adiciona no HTML a nova tarega
+//adiciona no HTML a nova tarefa
     const novaDiv = document.createElement('div')
     novaDiv.innerHTML = `
     <label class="toDos">
@@ -55,7 +52,8 @@ const renderizar = () =>{
 //manda pra função criarTarefa() cada item do array do banco
     limparTarefas()
     const banco = getBanco()
-    banco.forEach ((item, indice) => criarTarefa(item.tarefa, item.status, indice))
+    banco.forEach ((item, indice) =>criarTarefa(item.tarefa, item.status, indice))
+    
 }
 
 const removerItem = (indice) =>{
